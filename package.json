@@ -1,0 +1,39 @@
+{
+  "name": "clean-flask",
+  "version": "1.0.0",
+  "description": "Clean flask boilerplate with sqlalchemy, webpack, scss and more to write modern web applications.",
+  "scripts": {
+    "build": "node_modules/.bin/webpack --config webpack.config.js --mode=production",
+    "watch": "node_modules/.bin/webpack --config webpack.config.js --mode=development -w",
+    "lint-js": "./node_modules/.bin/eslint theme/js/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/janmarkuslanger/clean-flask.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/janmarkuslanger/clean-flask/issues"
+  },
+  "homepage": "https://github.com/janmarkuslanger/clean-flask#readme",
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "autoprefixer": "^9.6.1",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "extract-loader": "^3.1.0",
+    "babel-preset-airbnb": "^4.0.1",
+    "eslint": "^6.5.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "husky": "^3.0.7",
+    "file-loader": "^4.2.0",
+    "node-sass": "^4.12.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^8.0.0",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9"
+  }
+}
