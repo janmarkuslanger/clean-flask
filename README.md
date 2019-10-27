@@ -6,6 +6,9 @@ This boilerplate comes with following packages and tools out of the box:
 - SQLAlchemy
 - webpack
 - scss
+- login
 
 # Get started
 - Create a virtual env `python3 -m venv venv`
+- Install dependencies `pip3 install -r requirements.txt`
+- Run server `python3 app.py`
