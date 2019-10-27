@@ -1,8 +1,13 @@
+#!/usr/bin/env python3
+# -*- encoding: utf-8 -*-
 from flask import (
     Flask,
     render_template)
+from controller.login import login_blueprint
 
 app = Flask(__name__)
+
+app.register_blueprint(login_blueprint)
 
 @app.route('/')
 def hello():
