@@ -5,7 +5,8 @@ from flask import (
     render_template,
     request,
     url_for,
-    session
+    session,
+    redirect
 )
 from models.user import User
 from database import session as db_session
@@ -14,15 +15,14 @@ login_blueprint = Blueprint('login', __name__)
 
 
 @login_blueprint.route('/login', methods=['GET', 'POST'])
-def login():
+def index():
     if request.method == 'POST':
         user = db_session.query(User).filter_by(
-            username=request.form['username'],
-            password=request.form['password']).one_or_none()
+            username=request.form['username']).one_or_none()
 
-        if user:
+        if user and user.verify_password(request.form['password']):
             session['username'] = user.username
-            return redirect(url_for('hello'))
+            return redirect(url_for('dashboard.index'))
 
 
     return render_template('login.html')

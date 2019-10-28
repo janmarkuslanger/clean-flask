@@ -6,7 +6,8 @@ from models.user import User
 create_db()
 
 # Create a demo user
-user = User(name='Demo', username='demo', password='demo')
+user = User(name='Demo', username='demo')
+user.hash_password('demo')
 try:
     session.add(user)
     session.commit()
