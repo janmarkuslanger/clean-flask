@@ -4,7 +4,7 @@ const autoprefixer = require('autoprefixer');
 module.exports = {
   entry: ['./theme/scss/index.scss', './theme/js/index.js'],
   output: {
-    path: path.resolve(__dirname, './static/'),
+    path: path.resolve(__dirname, './app/static/'),
     filename: 'bundle.js',
   },
   module: {
@@ -15,7 +15,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              path: path.resolve(__dirname, './static/'),
+              path: path.resolve(__dirname, './app/static/'),
               name: 'bundle.css',
             },
           },

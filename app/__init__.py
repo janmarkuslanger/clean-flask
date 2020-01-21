@@ -11,3 +11,14 @@ app.config.from_object('config')
 db = SQLAlchemy(app)
 
 # register blueprints
+from app.dashboard.views import mod as mod_dashboard
+app.register_blueprint(mod_dashboard)
+
+from app.login.views import mod as mod_login
+app.register_blueprint(mod_login)
+
+from app.logout.views import mod as mod_logout
+app.register_blueprint(mod_logout)
+
+from app.index.views import mod as mod_index
+app.register_blueprint(mod_index)

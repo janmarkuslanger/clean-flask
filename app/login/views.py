@@ -8,16 +8,16 @@ from flask import (
     session,
     redirect
 )
-from models.user import User
-from database import session as db_session
+from app import db
+from app.user.models import User
 
-login_blueprint = Blueprint('login', __name__)
+mod = Blueprint('login', __name__, url_prefix='/login')
 
 
-@login_blueprint.route('/login', methods=['GET', 'POST'])
+@mod.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
-        user = db_session.query(User).filter_by(
+        user = db.session.query(User).filter_by(
             username=request.form['username']).one_or_none()
 
         if user and user.verify_password(request.form['password']):
@@ -25,4 +25,4 @@ def index():
             return redirect(url_for('dashboard.index'))
 
 
-    return render_template('login.html')
+    return render_template('/login/index.html')
