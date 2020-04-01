@@ -1,7 +1,7 @@
 # clean-flask
 Kickstart your next flask project with clean-flask. Clean-Flask is a template which bundles a few vital components when it comes to modern web applications.
 
-# What do you get
+## What do you get
 
 **Flask**
 <br>Flask is a super lightweight framework for web servers.
