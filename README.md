@@ -20,12 +20,12 @@ Kickstart your next flask project with clean-flask. Clean-Flask is a template wh
 Clone or download this repository. Start your terminal and move into the root of this repository.
 
 **Backend**
-<br>Create a virtual env `python3 -m venv venv`
-Install dependencies `pip3 install -r requirements.txt`
-Create DB `python3 db_setup.py`
-Create demo user `python3 demo_data.py`
-Run server `python3 run.py`
+1. Create a virtual env `python3 -m venv venv`
+2. Install dependencies `pip3 install -r requirements.txt`
+3. Create DB `python3 db_setup.py`
+4. Create demo user `python3 demo_data.py`
+5. Run server `python3 run.py`
 
 **Frontend**
-<br>Install packages `npm i`
-Start bundler `npm run watch`
+1. Install packages `npm i`
+2. Start bundler `npm run watch`
