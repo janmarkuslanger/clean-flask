@@ -7,7 +7,7 @@ Kickstart your next flask project with clean-flask. Clean-Flask is a template wh
 <br>Flask is a super lightweight framework for web servers.
 
 **SQLAlchemy**
-<br>SQLAlchemy is an Object-Relational-Mappers that supports SQLite, MySql, and much more.
+<br>SQLAlchemy is an Object-Relational-Mapper that supports SQLite, MySql, and much more.
 
 **webpack**
 <br>Webpack is a bundler for your stylesheets and javascript. It comes with babel, eslint, and some other neat packages like an autoprefixer.
