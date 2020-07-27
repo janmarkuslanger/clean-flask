@@ -24,5 +24,4 @@ def index():
             session['username'] = user.username
             return redirect(url_for('dashboard.index'))
 
-
     return render_template('/login/index.html')
