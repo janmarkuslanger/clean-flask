@@ -41,3 +41,4 @@ Clone or download this repository. Start your terminal and move into the root of
 - `npm run lint-js` - Lints your javascript files via eslint
 - `npm run watch` - Start webpack and watch files
 - `npm run build` - Build your assets files once
+- `flake8 app` - Lint your python files via flake8
