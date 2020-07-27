@@ -10,10 +10,16 @@ Kickstart your next flask project with clean-flask. Clean-Flask is a template wh
 <br>SQLAlchemy is an Object-Relational-Mapper that supports SQLite, MySql, and much more.
 
 **webpack**
-<br>Webpack is a bundler for your stylesheets and javascript. It comes with babel, eslint, and some other neat packages like an autoprefixer.
+<br>Webpack is a bundler for your stylesheets and javascript. It comes with babel and some other neat packages like an autoprefixer for your scss files.
+
+**scss**
+SCSS is a super cool preprocessor for your stylesheets.
+
+**eslint**
+<br>Lints your javascript files.
 
 **login**
-<br>This template comes with a simple, not safe login. 
+<br>This template comes with a simple, not safe login.
 
 ## Get started
 
@@ -29,3 +35,9 @@ Clone or download this repository. Start your terminal and move into the root of
 **Frontend**
 1. Install packages `npm i`
 2. Start bundler `npm run watch`
+
+## Commands
+
+- `npm run lint-js` - Lints your javascript files via eslint
+- `npm run watch` - Start webpack and watch files
+- `npm run build` - Build your assets files once
